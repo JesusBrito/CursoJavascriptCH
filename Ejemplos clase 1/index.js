@@ -34,11 +34,10 @@ console.log(numeroCuatro)
 */
 
 //================PROMPT, LOG Y ALERT================
-let numeroUno = prompt("¿Cual es el primer número a sumar?")
-let numeroDos = prompt("¿Cual es el segundo número a sumar?")
+let numeroUno = prompt("¿Cual es el primer número?")
+let numeroDos = prompt("¿Cual es el segundo número?")
 
-let suma = numeroUno+numeroDos
+let suma = parseFloat(numeroUno)+parseFloat(numeroDos)
+let multi = parseFloat(numeroUno)*parseFloat(numeroDos)
 
-alert(`La suma es ${suma}`)
-console.log(`La suma es ${suma}`)
-
+alert(`La suma es: ${suma} y la multiplicación es: ${multi}`)
