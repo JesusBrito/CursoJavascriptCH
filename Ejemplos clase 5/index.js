@@ -74,7 +74,7 @@ for (const propiedad in ironman) {
 */
 
 //================ CLASES ================
-
+/*
 class Personaje {
     constructor(nombre, vida, poder){
         this.nombre = nombre.toUpperCase();
@@ -112,3 +112,38 @@ wolverine.hablar()
 
 deadpool.disminuirVida(wolverine.poder)
 deadpool.hablar()
+*/
+class Producto {
+    constructor(nombre, precio, cantidad) {
+      this.nombre = nombre;
+      this.precio = precio;
+      this.cantidad = cantidad;
+      this.vendido = false;
+    }
+    aumentarPrecio(precioAumentar) {
+      this.precio += precioAumentar;
+    }
+    vender() {
+      this.vendido = true;
+    }
+    disminuirPrecio = (precioDiminuir) => (this.precio -= precioDiminuir);
+    aplicarPromo = (promoCode) => {
+        if(promoCode === "DESCUENTO100"){
+            this.precio -= (this.precio * 0.05)
+        }
+    }
+    reducirStock = (cantidad) => this.cantidad -= cantidad
+  }
+  
+  const LAPTOP = new Producto("Laptop HP", 800, 10)
+  /*
+  LAPTOP.aumentarPrecio(100)
+  console.log("Precio laptop: "+ LAPTOP.precio)
+  
+  LAPTOP.vender()
+  
+  console.log("Estatus vendido laptop: "+ LAPTOP.vendido)
+  */
+  
+  LAPTOP.aplicarPromo("DESCUENTO100")
+  console.log("Precio laptop: "+ LAPTOP.precio)
