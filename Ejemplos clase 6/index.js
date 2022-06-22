@@ -96,7 +96,6 @@ function calcularCosto(productos) {
 function main() {
   let productos = agregarProductos();
   mostrarProductos(productos);
-
   alert("El costo total de los productos es: " + calcularCosto(productos))
 }
 
