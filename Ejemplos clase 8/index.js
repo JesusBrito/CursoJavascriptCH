@@ -61,13 +61,13 @@ contenedor.className = "bg-blue";
 
 //================ OBTENER/AGREGAR VALOR DE UN INPUT  ================
 let inputCorreo = document.getElementById("inputCorreo")
-let inputContraseña = document.getElementById("inputContraseña")
+let inputContrasenia = document.getElementById("inputContraseña")
 
 console.log(inputCorreo.value)
 inputCorreo.value = "jesus@prueba.com"
 console.log(inputCorreo.value)
 
-console.log(inputContraseña.value)
+console.log(inputContrasenia.value)
 
 //================ EJEMPLO COMPLETO  ================
 
