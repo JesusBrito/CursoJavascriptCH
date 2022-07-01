@@ -60,6 +60,7 @@ contenedor.className = "bg-blue";
 */
 
 //================ OBTENER/AGREGAR VALOR DE UN INPUT  ================
+
 let inputCorreo = document.getElementById("inputCorreo")
 let inputContrasenia = document.getElementById("inputContraseña")
 
