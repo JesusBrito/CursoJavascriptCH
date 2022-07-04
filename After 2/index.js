@@ -1,4 +1,10 @@
 //================ EJEMPLO COMPLETO  ================
+const productos = [];
+let tabla;
+let textoTotalCompra;
+let textoTotalVenta;
+let textoTotalGanancia;
+
 class Producto {
   constructor(nombre, precioCompra, precioVenta, cantidad) {
     this.nombre = nombre.toUpperCase();
@@ -10,11 +16,6 @@ class Producto {
   calcularPrecioVenta = () => this.precioVenta * this.cantidad;
 }
 
-const productos = [];
-let tabla;
-let textoTotalCompra;
-let textoTotalVenta;
-let textoTotalGanancia;
 
 function inicializarElementos() {
   tabla = document.getElementById("tabla-productos");
@@ -27,9 +28,9 @@ function registrarProductos() {
   let numeroProductos = parseInt(prompt("Cuantos productos va a registrar?"));
   for (let index = 0; index < numeroProductos; index++) {
     let nombre = prompt("Ingrese el nombre");
-    let precioCompra = prompt("Ingrese el precio de compra");
-    let precioVenta = prompt("Ingrese el precio de venta");
-    let cantidad = prompt("Ingrese la cantidad");
+    let precioCompra = parseFloat(prompt("Ingrese el precio de compra"));
+    let precioVenta = parseFloat(prompt("Ingrese el precio de venta"));
+    let cantidad = parseInt(prompt("Ingrese lancantidad"));
     let productoARegistrar = new Producto(
       nombre,
       precioCompra,
